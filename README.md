@@ -1,10 +1,10 @@
 # Multiple Camera Streams GUI
 A simple user interface to stitch and display multiple camera streams with OpenCV and Kivy.
 
-> Supports videos and ip cameras.
+> Supports several videos and ip cameras.
 
 <div align="center">
-<img src=mylib/misc/demo.gif?raw=true "demo" width=540 >
+<img src=mylib/misc/demo.gif?raw=true "demo" width=750 >
 </div>
 
 ---
@@ -28,7 +28,7 @@ pip install kivy
 - To setup cameras via ui, click settings after running the code:
 
 <div align="center">
-<img src=mylib/misc/settings.png?raw=true "settings" width=540 >
+<img src=mylib/misc/settings.png?raw=true "settings" width=700 >
 </div>
 
 
