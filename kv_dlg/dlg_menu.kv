@@ -1,0 +1,89 @@
+Screen:
+    name: 'dlg_menu'
+
+    BoxLayout:
+        padding: (50, 15)
+        spacing: 30
+        orientation: 'horizontal'
+
+        size_hint_y: None
+        height: 100
+
+        ToggleButton:
+            size_hint_x: 0.14
+            text: 'All Cameras'
+            font_size: 22
+            group: 'view_mode'
+            state: 'down'
+            on_release: app.on_sel_view_mode(-1)
+
+        GridLayout:
+            cols: 4
+            rows: 2
+            size_hint_x: 0.45
+
+            ToggleButton:
+                text: 'Camera1'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(0)
+
+            ToggleButton:
+                text: 'Camera2'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(1)
+
+            ToggleButton:
+                text: 'Camera3'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(2)
+
+            ToggleButton:
+                text: 'Camera4'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(3)
+
+            ToggleButton:
+                text: 'Camera5'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(4)
+
+            ToggleButton:
+                text: 'Camera6'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(5)
+
+            ToggleButton:
+                text: 'Camera7'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(6)
+
+            ToggleButton:
+                text: 'Camera8'
+                font_size: 22
+                group: 'view_mode'
+                on_release: app.on_sel_view_mode(7)
+
+        Button:
+            text: 'Reset'
+            font_size: 22
+            size_hint_x: 0.1
+            on_release: app.on_reset()
+
+        Button:
+            text: 'Settings'
+            font_size: 22
+            size_hint_x: 0.1
+            on_release: app.go_setting()
+
+        Button:
+            size_hint_x: 0.1
+            text: 'Exit'
+            font_size: 22
+            on_release: app.on_exit()

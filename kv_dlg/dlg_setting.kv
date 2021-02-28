@@ -1,0 +1,306 @@
+Screen:
+    name: 'dlg_setting'
+
+    canvas:
+        Rectangle:
+            pos: 0, 0
+            size: root.width, root.height
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: (100, 40)
+        spacing: 30
+
+        BoxLayout:
+            size_hint_y: 0.1
+
+            Label
+                text: 'Camera Settings'
+                color: (0, 0, 0.5, 1)
+                font_size: 32
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: 0.7
+            spacing: 10
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera1'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam1
+                    text: app.camera_list[0]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera2'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam2
+                    text: app.camera_list[1]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera3'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam3
+                    text: app.camera_list[2]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera4'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam4
+                    text: app.camera_list[3]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera5'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam5
+                    text: app.camera_list[4]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera6'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam6
+                    text: app.camera_list[5]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera7'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam7
+                    text: app.camera_list[6]
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Camera8'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_cam8
+                    text: app.camera_list[7]
+                    font_size: 18
+                    multiline: False
+
+        BoxLayout:
+            size_hint_y: 0.1
+
+            Label
+                text: 'Database Settings'
+                color: (0, 0, 0.5, 1)
+                font_size: 32
+
+        GridLayout:
+            orientation: 'vertical'
+            cols: 3
+            spacing: (30, 15)
+            size_hint_y: 0.2
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Host'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_host
+                    text: app.txt_db_host
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Username'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_user
+                    text: app.txt_db_user
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Database'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_database
+                    text: app.txt_db_database
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Port'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_port
+                    text: app.txt_db_port
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Password'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_password
+                    text: app.txt_db_password
+                    font_size: 18
+                    multiline: False
+
+            BoxLayout:
+                spacing: 10
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 35
+
+                Label
+                    text: 'Table'
+                    color: (0, 0, 0.5, 1)
+                    font_size: 24
+                    size_hint_x: None
+
+                TextInput
+                    id: txt_db_table
+                    text: app.txt_db_table
+                    font_size: 18
+                    multiline: False
+
+        GridLayout:
+            cols: 2
+            spacing: 250
+            size_hint_y: None
+            height: 60
+            padding: (200, 0)
+            Button:
+                text: "Apply"
+                font_size: 26
+                on_release: app.on_cam_set(txt_cam1.text, txt_cam2.text, txt_cam3.text, txt_cam4.text, txt_cam5.text, txt_cam6.text, txt_cam7.text, txt_cam8.text, txt_db_host.text, txt_db_port.text, txt_db_user.text, txt_db_password.text, txt_db_database.text, txt_db_table.text)
+            Button:
+                text: "Back"
+                font_size: 26
+                on_release: app.on_return()

@@ -1,0 +1,19 @@
+#:kivy 1.0.9
+
+FloatLayout:
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 30
+
+        Image:
+            id: img_video
+
+        Label:
+            size_hint_y: None
+            height: 80
+
+    ScreenManager:
+        id: sm
+        on_current_screen:
+            idx = app.screen_names.index(args[1].name)

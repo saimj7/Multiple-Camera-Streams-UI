@@ -1,0 +1,18 @@
+{
+    "camera_url": [
+        "mylib/videos/1.mp4",
+        "mylib/videos/2.mp4",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "db_host": "",
+    "db_user": "",
+    "db_port": "",
+    "db_password": "",
+    "db_database": "",
+    "db_table": ""
+}
