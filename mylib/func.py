@@ -15,20 +15,17 @@ def rm_tree(folder_name):
 
 def img_encode_b64(img_name):
     img_file = open(img_name, 'rb')
-    img_b64_data = base64.b64encode(img_file.read()).decode('UTF-8')
-    return img_b64_data
+    return base64.b64encode(img_file.read()).decode('UTF-8')
 
 
 def img_decode_b64(img_date, img_name):
-    img_out = open(img_name, 'wb')
-    img_out.write(img_date.decode('base64'))
-    img_out.close()
+    with open(img_name, 'wb') as img_out:
+        img_out.write(img_date.decode('base64'))
 
 
 def write_text(filename, text):
-    file1 = open(filename, 'w')
-    file1.write(text)
-    file1.close()
+    with open(filename, 'w') as file1:
+        file1.write(text)
 
 
 def append_text(filename, text):
